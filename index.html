@@ -1,9 +1,88 @@
-<html>
-  <head>
-    <title>My Page</title>
-  </head>
-  <body>
-    <h1>Welcome to My Page</h1>
-    <p>This is a simple paragraph.</p>
-  </body>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Sencilla con Bootstrap</title>
+    
+    <!-- Enlace al CSS de Bootstrap 5 (CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">MiSitio web</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-toggle="target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección Principal (Hero) -->
+    <header class="container mt-5">
+        <div class="p-5 text-center bg-light rounded-3">
+            <h1 class="display-4 fw-bold">¡Hola, Mundo!</h1>
+            <p class="lead mt-3">Esta es una página sencilla y responsiva construida con los componentes básicos de Bootstrap 5. Puedes usarla como punto de partida para tu proyecto.</p>
+            <a class="btn btn-primary btn-lg mt-2" href="#" role="button">Aprender más</a>
+        </div>
+    </header>
+
+    <!-- Contenido en Cuadrícula (Grid) con Tarjetas -->
+    <main class="container mt-5 mb-5">
+        <div class="row g-4">
+            <!-- Tarjeta 1 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Diseño Rápido</h5>
+                        <p class="card-text">Utilizando las clases de Bootstrap, puedes estructurar tu sitio en minutos sin escribir mucho CSS personalizado.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Tarjeta 2 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">100% Responsivo</h5>
+                        <p class="card-text">El sistema de cuadrícula se adapta automáticamente a teléfonos móviles, tabletas y pantallas de escritorio.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Tarjeta 3 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Componentes Listos</h5>
+                        <p class="card-text">Incluye botones, barras de navegación, tarjetas y alertas listas para usar con solo agregar clases HTML.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white text-center py-3 mt-auto">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 MiSitio Web. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts de Bootstrap (Popper.js y Bootstrap JS) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmxc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
 </html>
